@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".VehiclesLST"
+    android:background="@color/material_dynamic_secondary90">
+
+
+<androidx.appcompat.widget.SearchView
+    android:id="@+id/search_view_BAR"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:queryHint="Search Here"
+    android:background="@drawable/search_view_bg"
+    app:iconifiedByDefault="false"
+   />
+
+
+    <!-- CC Filter Buttons -->
+    <LinearLayout
+        android:id="@+id/cc_filters_buttons_layout"
+        android:layout_width="320dp"
+        android:layout_marginHorizontal="50dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginVertical="65dp"
+        android:background="@color/material_dynamic_secondary90">
+
+        <androidx.appcompat.widget.AppCompatButton
+          android:id="@+id/ccSearch1"
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          android:text="@string/_0_500_cc"
+          android:textStyle="bold"
+          android:textSize="15sp"
+          android:background="@color/material_dynamic_secondary90"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/ccSearch2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/_500_1000_cc"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:background="@color/material_dynamic_secondary90"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/ccSearch3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/_1000_cc"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:background="@color/material_dynamic_secondary90"
+            />
+
+
+    </LinearLayout>
+
+
+
+    <!-- Type Filter Buttons -->
+
+    <LinearLayout
+        android:id="@+id/type_filters_buttons_layout"
+        android:layout_width="320dp"
+        android:layout_marginHorizontal="50dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginVertical="120dp"
+        android:background="@color/material_dynamic_secondary90">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/typeSearch1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/bikes"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:background="@color/material_dynamic_secondary90"
+
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/typeSearch2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/cars"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:background="@color/material_dynamic_secondary90"
+
+            />
+
+
+    </LinearLayout>
+
+
+    <!-- Price Filter Buttons -->
+
+    <LinearLayout
+        android:id="@+id/price_filters_buttons_layout"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginVertical="170dp"
+        android:background="@color/material_dynamic_secondary90">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/priceSearch1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/price_0_10k"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:background="@color/material_dynamic_secondary90"
+
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/priceSearch2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/price_n_10k_50k"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:background="@color/material_dynamic_secondary90"
+
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/priceSearch3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/price_n50k_150k"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:background="@color/material_dynamic_secondary90"
+
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/priceSearch4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/price_n150k_and_more"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:background="@color/material_dynamic_secondary90"
+
+            />
+
+
+    </LinearLayout>
+
+    <!-- Options Buttons -->
+
+
+    <LinearLayout
+        android:id="@+id/app_buttons_layout"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="235dp"
+        android:background="@color/material_dynamic_secondary90"
+        >
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/back_to_main_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/back_to_main_page"
+            android:layout_marginHorizontal="25dp"
+            android:textStyle="bold"
+            android:minLines="2"
+            android:background="@color/material_dynamic_primary70"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/go_to_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/go_to_stores_map"
+            android:layout_marginHorizontal="25dp"
+            android:textStyle="bold"
+            android:background="@color/material_dynamic_primary70"
+            />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/favorite_vehicle"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="300dp"
+        android:background="@color/material_dynamic_secondary90"
+        android:layout_marginHorizontal="100dp"
+        >
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/go_to_favorite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/search_your_favorite_vehicle_online"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:background="@color/material_dynamic_primary70"
+            />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/main_LST_vehicles"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="7dp"
+        tools:listitem="@layout/vehicle_item" >
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>
