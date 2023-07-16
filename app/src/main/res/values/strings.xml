@@ -1,18 +1,8 @@
 <resources>
     <string name="app_name">Final_App_FMAV</string>
-    <string name="sign_up_for_free">Sign Up For Free!</string>
     <string name="sign_in">Sign In For More Options</string>
     <string name="join_us_and_find_your_best_vehicle_match">Join Us And Find Your \n Best Vehicle Match!</string>
     <string name="yad_2_board">Yad 2 Board</string>
-    <string name="title_activity_sign_up">SignUpActivity</string>
-    <string name="prompt_email">Email</string>
-    <string name="prompt_password">Password</string>
-    <string name="action_sign_in">Sign in or register</string>
-    <string name="action_sign_in_short">Sign in</string>
-    <string name="welcome">"Welcome !"</string>
-    <string name="invalid_username">Not a valid username</string>
-    <string name="invalid_password">Password must be >5 characters</string>
-    <string name="login_failed">"Login failed"</string>
     <string name="email">Email</string>
     <string name="user_name">UserName</string>
     <string name="password">Password</string>
@@ -24,7 +14,6 @@
     <string name="title_activity_maps">MapsActivity</string>
     <string name="go_to_stores_map">Find Out Agencies Around you!</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="_0_500_cc">0-500 CC</string>
     <string name="_500_1000_cc">500-1000 CC</string>
     <string name="_1000_cc">1000+ CC</string>
@@ -34,7 +23,5 @@
     <string name="price_n_10k_50k">Price \n 10k-50k</string>
     <string name="price_n50k_150k">Price \n50k-150k</string>
     <string name="price_n150k_and_more">Price \n150k and more</string>
-    <string name="search_here">Search Here</string>
-    <string name="t">T</string>
     <string name="search_your_favorite_vehicle_online">Press On Your Favorite Vehicle And Search Online!</string>
 </resources>
