@@ -3,15 +3,20 @@ package com.example.final_app_fmav;
 import android.app.Application;
 
 import com.example.final_app_fmav.Utilities.ImageLoader;
-import com.google.firebase.ktx.Firebase;
+import com.example.final_app_fmav.Utilities.SingleGen;
 
 public class App extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-
-        ImageLoader.initImageLoader(this);
+        SingleGen.init(this);
+        SingleGen.getInstance().mediaPlayerInit();
+        ImageLoader.initImageLoader(this);;
     }
 
-
+    @Override
+    public void onTerminate() {
+        super.onTerminate();
+        SingleGen.getInstance().mediaPlayerRelease();
+    }
 }

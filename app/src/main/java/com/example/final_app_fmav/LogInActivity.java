@@ -7,7 +7,6 @@ import android.widget.Toast;
 import androidx.activity.result.ActivityResultCallback;
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.RecyclerView;
 
 import com.firebase.ui.auth.AuthUI;
 import com.firebase.ui.auth.FirebaseAuthUIActivityResultContract;
@@ -19,16 +18,13 @@ import com.google.firebase.auth.FirebaseUser;
 import java.util.Arrays;
 import java.util.List;
 public class LogInActivity extends AppCompatActivity {
-    private RecyclerView main_LST_vehicles;
     public FirebaseAuth mAuth;
-    private Boolean musicChecked;
-    public static final String KEY_MUSIC = "KEY_MUSIC";
+
 
     @Override
     public void onStart() {
         super.onStart();
         // Check if user is signed in (non-null) and update UI accordingly.
-        Intent intent=getIntent();
         mAuth=FirebaseAuth.getInstance();
         FirebaseUser currentUser = mAuth.getCurrentUser();
         updateUI(currentUser);
@@ -95,10 +91,10 @@ public class LogInActivity extends AppCompatActivity {
             FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
 
             // ...
-            Intent previousIntent = getIntent();
-            musicChecked=previousIntent.getBooleanExtra(KEY_MUSIC,false);
+            //Intent previousIntent = getIntent();
+            //musicChecked=previousIntent.getBooleanExtra(KEY_MUSIC,false);
             Intent newIntent= new Intent(this,VehiclesLST.class);
-            newIntent.putExtra(VehiclesLST.KEY_MUSIC, musicChecked);
+           // newIntent.putExtra(VehiclesLST.KEY_MUSIC, musicChecked);
             startActivity(newIntent);
             finish();
         } else {

@@ -1,0 +1,10 @@
+# FMAV_Android_App
+Android app i have developed, contains firebase usage, and many features
+
+
+## App stages for running and observe
+
+1. **for running the app you'll need to use API_KEY for the map feature**
+2. put the API_KEY at the proper place inside the 'Manifest' file
+3. youtube video demonstrating tha app: 
+

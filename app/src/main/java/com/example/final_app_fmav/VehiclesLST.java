@@ -2,7 +2,6 @@ package com.example.final_app_fmav;
 
 import android.app.SearchManager;
 import android.content.Intent;
-import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 
@@ -23,17 +22,12 @@ public class VehiclesLST extends AppCompatActivity {
     private RecyclerView main_LST_vehicles;
     private AppCompatButton back_to_main_page, go_to_map, cc_search1, cc_search2, cc_search3, type_search1, type_search2;
     private AppCompatButton price_search1,price_search2,price_search3,price_search4;
-    public static final String KEY_MUSIC = "KEY_MUSIC";
 
-    private Boolean musicChecked;
-    private MediaPlayer mediaPlayer;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_vehicles_lst);
-        Intent previousIntent = getIntent();
-        musicChecked=previousIntent.getBooleanExtra(KEY_MUSIC,true);
-        //init music feature
         SearchView searchView= findViewById(R.id.search_view_BAR);
 
         // init all vehicles list

@@ -50,15 +50,13 @@ public class VehicleAdapter extends RecyclerView.Adapter<VehicleAdapter.VehicleV
             holder.vehicle_IMG_favorite.setImageResource(R.drawable.heart);
         else
             holder.vehicle_IMG_favorite.setImageResource(R.drawable.heart_empty);
-        holder.vehicle_IMG_favorite.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                vehicle.setFavorite();
-                if (vehicle.isFavorite())
-                    holder.vehicle_IMG_favorite.setImageResource(R.drawable.heart);
-                else
-                    holder.vehicle_IMG_favorite.setImageResource(R.drawable.heart_empty);
-            }
+
+        holder.vehicle_IMG_favorite.setOnClickListener(view -> {
+            vehicle.setFavorite();
+            if (vehicle.isFavorite())
+                holder.vehicle_IMG_favorite.setImageResource(R.drawable.heart);
+            else
+                holder.vehicle_IMG_favorite.setImageResource(R.drawable.heart_empty);
         });
     }
 

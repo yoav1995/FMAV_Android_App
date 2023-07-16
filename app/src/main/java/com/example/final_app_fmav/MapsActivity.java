@@ -28,7 +28,6 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
 
     private GoogleMap mMap;
     private final int FINE_PERMISSION_CODE = 1;
-    SupportMapFragment supportMapFragment;
     Location currentLocation;
     FusedLocationProviderClient fusedLocationProviderClient;
 
